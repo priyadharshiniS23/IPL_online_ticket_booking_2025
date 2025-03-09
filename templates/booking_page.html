@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Ticket Booking</title>
+    <link rel="stylesheet" href="../static/booking_page/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>IPL Ticket Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="booking">
+        <h2>Book Your Tickets</h2>
+        <form id="bookingForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" >
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"  pattern="[0-9]{10}">
+            
+            <label for="match">Select Match:</label>
+            <select id="match" name="match" >
+                <option value="">Choose a Match</option>
+                <option value="match1">Match 1 - Team A vs Team B</option>
+                <option value="match2">Match 2 - Team C vs Team D</option>
+            </select>
+            
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1" max="10" >
+            
+            <button type="submit">Book Now</button>
+        </form>
+        <p id="confirmationMessage"></p>
+    </section>
+    <footer>
+        <p>&copy; 2025 IPL Ticket Booking. All rights reserved.</p>
+    </footer>
+    <script src="../static/booking_page/js/main.js"></script>
+</body>
+</html>
